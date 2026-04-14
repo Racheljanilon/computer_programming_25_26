@@ -1,0 +1,9 @@
+def calculate_power(base_val, exponent_val):
+    result = base_val ** exponent_val
+    return result
+    result 
+base_value = 2
+exponent_value = 3
+
+result = calculate_power(exponent_value, base_value) 
+print(result)
