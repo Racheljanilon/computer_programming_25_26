@@ -42,11 +42,11 @@ label_key = "species"
 # Task 5: Comparing with threshold
 is_short_petal = petal_length < threshold
 print("\n=== Comparison ===")
-print("Is the petal length less than", threshold, ":", is_short_petal)
+print("is_short_petal (petal_length < threshold):", is_short_petal)
 print("\n=== Conversion ===")
-print("petal length text:", str(petal_length))
-print("threshold text:", str(threshold))
-print("threshold number:", float(threshold))
+print("petal_length_text:", str(petal_length), "| type: <class 'str>")
+print("threshold_text:", str(threshold), "| type: <class 'str'>")
+print("threshold_number:", float(threshold), "| type: <class 'float'>")
 
 # Task 6: Comparing with species
 

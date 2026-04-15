@@ -73,7 +73,6 @@ def compute_threshold_prediction(sample):
     """
     # we deliberately put the pass here, and student need to replace it with the if statement and return statement to make the prediction.
     # This should be given in the instruction, on what they should paste. sub task 5, the need to also give the return statement, which is missing in the instruction now.
-    pass
     if sample[FEATURE_NAME] < THRESHOLD:
         y_pred = POSITIVE_LABEL
     else:
@@ -97,7 +96,7 @@ def derive_true_label(sample):
     Returns:
         str: The true label for this lesson.
     """
-
+    
     if sample[LABEL_KEY] == POSITIVE_LABEL:
         y_true = POSITIVE_LABEL
     else:
@@ -123,7 +122,6 @@ def update_result_counts(correct, wrong, total, y_pred_list, y_pred, y_true):
         tuple: Updated correct, wrong, total, y_pred_list
     """
     # we will provide only a pass, but we drop all of below code, and student need to write the if statement to compare y_pred and y_true, and update the correct and wrong counts accordingly. They also need to remember to update the total count and append the y_pred to the y_pred_list.
-    pass
     if y_pred == y_true:
         correct += 1
     else:
@@ -153,7 +151,7 @@ def calculate_accuracy(correct, total):
         accuracy = 0.0
 
     # They need to provide the return value, maybe, we can ask them, what is missing in this function, go and check the function call in the main function, and see what they need to return here to make the main function work.
-
+    return accuracy
 
 # Entry to Task 4 until Task 9: Run the same prediction loop from Session 3, Wrap the prediction workflow in a function
 
@@ -242,8 +240,7 @@ def print_summary(correct, wrong, total, y_pred_list, accuracy):
     print("Total:", total)
     print("Accuracy (%):", round(accuracy, 2))
     print("All predictions:", y_pred_list)
-    print("\n=== End of session 4 ===")
-
+    
 
 def main():
     """Run the full beginner version of the program."""
@@ -270,7 +267,7 @@ def main():
 
     # Task 12: Create and call the summary-report function
     print_summary(correct, wrong, total, y_pred_list, accuracy)
-
+    print("\n=== End of session 4 ===")
 
 if __name__ == "__main__":
     main()
