@@ -43,8 +43,8 @@ label_key = "species"
 is_short_petal = petal_length < threshold
 print("\n=== Comparison ===")
 print("is_short_petal (petal_length < threshold):", is_short_petal)
-print("\n=== Conversion ===")
-print("petal_length_text:", str(petal_length), "| type: <class 'str>")
+print("\n=== Conversions ===")
+print("petal_length_text:", str(petal_length), "| type: <class 'str'>")
 print("threshold_text:", str(threshold), "| type: <class 'str'>")
 print("threshold_number:", float(threshold), "| type: <class 'float'>")
 

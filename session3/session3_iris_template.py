@@ -1,4 +1,3 @@
-#SESSION 3:
 
 """Session 3: Lists, Loops, and Conditionals for Iris classification.
 This script builds on Session 2 by converting variables to dictionaries, assembling a dataset list,
@@ -39,11 +38,9 @@ flower2 = {
     "species": "setosa"
 } #remember to close me for a dict
 
-
 # Task 2: Create list of dictionaries
 # Combine our dictionaries into a single list
 dataset= [flower1, flower2]
-
 
 print("\n=== Start session 3 Prediction Loop ===")
 
@@ -80,9 +77,6 @@ for sample in dataset:
         f"id={sample['id']} | true={y_true} | pred={y_pred} | "
         f"petal_length={sample['petal_length']}"
     )
-
-
-
 
 # Task 10: Compute and print final metrics
 accuracy = (correct / total) * 100 if total > 0 else 0.0
